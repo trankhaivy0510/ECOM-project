@@ -1,0 +1,20 @@
+export const ProductUI = {
+    sideNav: '#snav',
+    producSettings: 'span .mdc-list-item__text',
+    productMenu: 'a[href="#/product-setting/products"]',
+    buttonCreate: 'button.mat-menu-trigger',
+    buttonAddOddProduct: 'button.cdk-focused.cdk-mouse-focused',
+    brand: 'input#mat-input-1',
+    brandResult:'mat-option',
+    categoryLevel1: 'div li',
+    categoryLevel2:'div li',
+    categoryLevel3:'div li',
+    nextPageButton:'button.mat-stepper-next',
+    productNameInput:'input#mat-input-7',
+    descriptionInput:'div.ql-editor',
+    packingInput:'input#mat-input-5',
+    propertyInput:'input#mat-input-4',
+    addPropertyButton: 'button',
+    property:'input#mat-input-12',
+    submitButton:'button[type=submit]'
+}

@@ -1,0 +1,8 @@
+{
+    "correctUsername": "qctest@finviet.com.vn",
+    "notExistUsername":"qctest",
+    "blankUsername":"",
+    "correctPassword": "QCfinviet12@@",
+    "invalidPassword":"QCfinviet12@@AA",
+    "blankPassword": ""
+}
