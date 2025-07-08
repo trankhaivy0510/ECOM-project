@@ -2,6 +2,17 @@ export const GoodsAdjustsUI = {
     sideNav: '#snav',
     producSettings: 'span .mdc-list-item__text',
     productMenu: 'a[href="#/product-sell/goods-adjusts"]',
-    addAdjustsButton: "button#GOODS_ADJUST--CREATE",
-    
-}
+    addAdjustsButton: "button.GOODS_ADJUST--CREATE",
+    branchField: "input#mat-input-2",
+    clearBranchButton: "mat-icon.mat-icon",
+    branchName: "mat-option#mat-option-16",
+    chooseProductButton: "button#cdk-focused",
+    skuCodeField:"textarea.mat-input-23",
+    searchProductButton: "button",
+    allCheckbox: "input#mat-checkbox-22-input",
+    addProductButton:"button",
+    addAdjustsSlipButton: "button",
+    slipCheckbox:"input.mat-checkbox-30-input",
+    editSlipButton: "button .table-action-UPDATE",
+    statusField: "div .ng-tns-c79-86",
+} 

@@ -13,5 +13,13 @@ test.beforeEach('Test login', async ({ page }) => {
     await login.inputPassword("QCfinviet12@@");
     await login.buttonLogin();
     // await login.chooseEcom();
-}
-)
+})
+
+test('Test increase adjustment', async ({page}) => {
+    const increaseAdjust = new GoodsAdjustsPage(page);
+    await increaseAdjust.goToAdjustPage();
+    await increaseAdjust.clickOnCreateAdjustButton();
+    await increaseAdjust.clickOnBranchInput();
+    await increaseAdjust.fillBranchCode("CN0635993")
+    await increaseAdjust.chooseBranch();
+})
