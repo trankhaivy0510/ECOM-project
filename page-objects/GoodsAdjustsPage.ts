@@ -63,4 +63,9 @@ export class GoodsAdjustsPage {
     public async chooseBranch(){
         await this.branchName.click();
     }
+
+    public async clickOnChooseProductButton(){
+        await this.chooseProductButton.click();
+    }
+
 }
