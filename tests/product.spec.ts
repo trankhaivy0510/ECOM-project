@@ -5,14 +5,14 @@ import { ProductPage } from '../page-objects/ProductPage';
 
 const account = JSON.parse(fs.readFileSync('data-test/account.json', 'utf8'));
 
-test.beforeEach('Test login', async ({ page }) => {
-    const login = new LoginPage(page);
-    await login.goToLoginPage();
-    await page.waitForLoadState('load');
-    await login.inputUsername("qctest@finviet.com.vn");
-    await login.inputPassword("QCfinviet12@@");
-    await login.buttonLogin();
-})
+// test.beforeEach('Test login', async ({ page }) => {
+//     const login = new LoginPage(page);
+//     await login.goToLoginPage();
+//     await page.waitForLoadState('load');
+//     await login.inputUsername("qctest@finviet.com.vn");
+//     await login.inputPassword("QCfinviet12@@");
+//     await login.buttonLogin();
+// })
 
 test('Go to Product Page', async ({ page }) => {
     const createOddProduct = new ProductPage(page);
