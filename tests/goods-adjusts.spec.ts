@@ -4,15 +4,15 @@ import fs from 'fs';
 import { GoodsAdjustsPage } from '../page-objects/GoodsAdjustsPage';
 import { test } from '../fixtures';
 
-test.beforeEach('Test login', async ({ page }) => {
-    const login = new LoginPage(page);
-    await login.goToLoginPage();
-    await page.waitForLoadState('load');
-    await login.inputUsername("qctest@finviet.com.vn");  
-    await login.inputPassword("QCfinviet12@@");
-    await login.buttonLogin();
-    // await login.chooseEcom();
-})
+// test.beforeEach('Test login', async ({ page }) => {
+//     const login = new LoginPage(page);
+//     await login.goToLoginPage();
+//     await page.waitForLoadState('load');
+//     await login.inputUsername("qctest@finviet.com.vn");  
+//     await login.inputPassword("QCfinviet12@@");
+//     await login.buttonLogin();
+//     // await login.chooseEcom();
+// })
 
 test('Test increase adjustment', async ({page}) => {
     const increaseAdjust = new GoodsAdjustsPage(page);
