@@ -2,7 +2,7 @@ import { chromium, FullConfig } from '@playwright/test';
 import { LoginPage } from './page-objects/LoginPage';
 
 async function globalSetup(config: FullConfig) {
-  const browser = await chromium.launch({ headless: false }); // mở browser lên xem
+  const browser = await chromium.launch({ headless: true }); // mở browser lên xem
   const context = await browser.newContext();
   const page = await context.newPage();
 
