@@ -16,6 +16,16 @@ test('Verify credentials using credential authentication', async ({ page }) => {
   await login.inputPassword("QCfinviet12@@");
   await login.buttonLogin();
   // await login.chooseEcom();
+
+  // ĐỢI redirect hoặc element sau login
+  // await page.waitForURL('/dashboard');
+
+//   await page.waitForFunction(() =>
+//   document.cookie.includes('access_token') ||
+//   document.cookie.includes('session')
+// );
+//   await login.storageStateLogin();
+  
 });
 
 

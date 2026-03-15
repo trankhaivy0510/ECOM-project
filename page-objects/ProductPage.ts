@@ -60,7 +60,7 @@ export class ProductPage {
         await this.buttonAddOddProduct.click();
     }
 
-    async addBrand(brandName) {
+    async addBrand(brandName: string) {
         await this.brand.click();
         await this.brand.type(brandName);
        
@@ -100,12 +100,12 @@ export class ProductPage {
         await this.nextPageButton.first().click();
     }
 
-    async fillProductName(productName) {
+    async fillProductName(productName: string) {
         await this.productNameInput.click();
         await this.productNameInput.fill(productName);
     }
 
-    async fillProductDescription(productDescription) {
+    async fillProductDescription(productDescription: string) {
         await this.descriptionInput.click();
         await this.descriptionInput.fill(productDescription);
     }
@@ -118,7 +118,7 @@ export class ProductPage {
         await this.packingInput.click();
     }
     
-    async fillPackingInput(packingName) {
+    async fillPackingInput(packingName: string) {
         await this.packingInput.fill(packingName);
     
         // Lấy các mat-option chứa tên packingName
